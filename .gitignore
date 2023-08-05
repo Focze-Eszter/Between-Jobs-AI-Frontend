@@ -1,0 +1,5 @@
+# Ignore the Running Logs
+__pycache__/
+
+#Ignore The previous .git File Logs
+.git/
