@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Remover || Between Jobs-AI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <div class="bg-white rounded-lg shadow-md p-6 flex">
+      <div class="w-2/3 pr-6">
+        <h1 class="text-2xl font-bold mb-4">Welcome to Background Remover</h1>
+        <p class="text-gray-600 mb-6">
+          Remove the background from your images effortlessly! Simply upload an image, and our advanced AI technology will help you remove the background, giving you a clean and isolated subject.
+        </p>
+        <hr class="my-4">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <div class="mb-4">
+            <label for="file" class="block text-sm font-medium text-gray-700">Choose an image to remove the background:</label>
+            <input type="file" name="file" class="mt-1 p-2 border rounded-md" id="file">
+          </div>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">
+            Upload and Remove Background
+          </button>
+        </form>
+      </div>
+      <div class="w-1/3">
+        <h2 class="text-lg font-semibold mb-2">Uploaded Image</h2>
+        <div class="border p-2">
+          <!-- Display the uploaded image here -->
+          <img src="" alt="Uploaded Image" id="uploaded-image" class="w-full">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript to display uploaded image -->
+  <script>
+    const fileInput = document.getElementById('file');
+    const uploadedImage = document.getElementById('uploaded-image');
+
+    fileInput.addEventListener('change', (event) => {
+      const selectedFile = event.target.files[0];
+      if (selectedFile) {
+        uploadedImage.src = URL.createObjectURL(selectedFile);
+      }
+    });
+  </script>
+</body>
+</html>

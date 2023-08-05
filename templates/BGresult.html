@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BG-Result || Between Jobs-AI</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Result</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='BackgroundRemoverImage/processed.png') }}" alt="Processed Image">
+                <p class="text-center mt-3">
+                    <strong>How to Download:</strong> To save the transformed image, right-click on the image and select the 'Save Image As' option.
+                </p>
+                <div class="text-center">
+                    <a href="{{ url_for('home') }}" class="btn btn-secondary">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
