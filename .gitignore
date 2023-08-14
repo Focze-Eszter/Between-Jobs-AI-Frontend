@@ -1,6 +1,9 @@
 # Ignore The previous .git File Logs
 .git/
 
+# Ignoring the Requirements file
+requirements.txt
+
 # Ignoring the flasksession
 flask_session/
 
