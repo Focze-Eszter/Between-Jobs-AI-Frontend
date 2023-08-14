@@ -1,5 +1,40 @@
-# Ignore the Running Logs
+# Ignore The previous .git File Logs
+.git/
+
+# Ignoring the flasksession
+flask_session/
+
+# Ignoring the logs for the Filtering Operations
+utils/__pycache__/
+
+# Compiled Python files
 __pycache__/
 
-#Ignore The previous .git File Logs
-.git/
+# Virtual environment
+venv/
+
+# Configuration files
+config.py
+
+# Logs
+*.log
+audio.wav
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Other project-specific files or directories
+apikey.txt
+
+# Ignoring All the Python Models
+CodeFormer.pth
+GFPGANv1.2.pth
+GFPGANv1.3.pth
+GFPGANv1.4.pth
+realesr-general-x4v3.pth
+RestoreFormer.pth
+RestoreFormer.pth
+
+# Ingoring All the Models Weights
+gfpgan/

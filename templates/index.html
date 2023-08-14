@@ -30,13 +30,13 @@
 
 					<img src="../static/assets/images/logo.webp" class="logo" width="45" height="45">
 					<li data-nav="home">
-						<a href="#home" class="nav_item">
+						<a href="{{url_for('home')}}" class="nav_item">
 							<img src="../static/assets/icons/home_mini.webp" width="18" height="18" alt="home page icon">Home
 						</a>
 					</li>
 
 					<li data-nav="features" class="features">
-						<a href="#home" class="nav_item">
+						<a href="{{url_for('home')}}" class="nav_item">
 							<img src="../static/assets/icons/sparks_mini.webp" width="18" height="18" alt="features icon">Features
 						</a>
 
@@ -50,28 +50,32 @@
 									</a>
 								</li>
 								<li data-nav="">
-									<a href="#" class="nav_item">
-										<img src="../static/assets/icons/cleanup_mini.webp" width="18" height="18" alt="image sharpening feature icon">Image Sharpening
+									<a href="{{url_for('ImageEditorFeature')}}" class="nav_item">
+										<img src="../static/assets/icons/cleanup_mini.webp" width="18" height="18" alt="image filtering editor feature icon">Image Filtering Editor
 									</a>
 								</li>
 								<li data-nav="">
-									<a href="#" class="nav_item">
-										<img src="../static/assets/icons/resizer_mini.webp" width="20" height="20" alt="cropping tool feature icon">Cropping tool
+									<a href="{{url_for('pdfToWordFeature')}}" class="nav_item">
+										<img src="../static/assets/icons/word_mini.webp" width="20" height="20" alt="PDF to Word convertor icon">PDF to Word
+
+										<!-- <img src="../static/assets/icons/resizer_mini.webp" width="20" height="20" alt="cropping tool feature icon">Cropping tool -->
 									</a>
 								</li>
 								<li data-nav="">
-									<a href="#" class="nav_item">
+									<a href="{{ url_for('docx2pdfindex') }}" class="nav_item">
 										<img src="../static/assets/icons/pdf_mini.webp" width="20" height="18" alt="Word to PDF convertor icon">Word to PDF
 									</a>
 								</li>
 								<li data-nav="">
-									<a href="#" class="nav_item">
-										<img src="../static/assets/icons/word_mini.webp" width="20" height="20" alt="PDF to Word convertor icon">PDF to Word
+									<a href="{{url_for('enhancerIndex')}}" class="nav_item">
+										<img src="../static/assets/icons/background_remover_mini.webp" width="20" height="20" alt="image enhancement tool feature icon">Image Enhancement Tool
+
+										<!-- <img src="../static/assets/icons/word_mini.webp" width="20" height="20" alt="PDF to Word convertor icon">PDF to Word -->
 									</a>
 								</li>
 								<li data-nav="">
-									<a href="#" class="nav_item">
-										<img src="../static/assets/icons/summary_mini.webp" width="20" height="20" alt="summarizer feature icon">Summarizer
+									<a href="{{url_for('speechToTextGenerator')}}" class="nav_item">
+										<img src="../static/assets/icons/summary_mini.webp" width="20" height="20" alt="audio lyrics generator feature icon">Audio Lyrics Generator
 									</a>
 								</li>
 							</div>
@@ -132,33 +136,40 @@
 						</a>
 					</div>
 					<div class="removebg_option option">
-						<a href="#">
+						<a href="{{url_for('ImageEditorFeature')}}">
 							<img src="../static/assets/icons/cleanup_noise.webp" alt="image sharpening feature in the quick menu">
-							<p>Image Sharpening</p>
+							<!-- <p>Image Sharpening</p> -->
+							<p>Image Filtering Editor</p>
 						</a>
 					</div>
 					<div class="removebg_option option">
-						<a href="#">
-							<img src="../static/assets/icons/resize_file.webp" alt="Cropping tool feature in the quick menu">
-							<p>Cropping Tool</p>
+						<a href="{{url_for('pdfToWordFeature')}}">
+							<img src="../static/assets/icons/word_file.webp" height="45" alt="PDF to Word feature in the quick menu">
+							<p>PDF to Word</p>
+
+							<!-- <img src="../static/assets/icons/resize_file.webp" alt="Cropping tool feature in the quick menu"> -->
+							<!-- <p>Cropping Tool</p> -->
 						</a>
 					</div>
 					<div class="removebg_option option">
-						<a href="#">
+						<a href="{{ url_for('docx2pdfindex') }}">
 							<img src="../static/assets/icons/pdf_file.webp" alt="Word to PDF feature in the quick menu">
 							<p>Word to PDF</p>
 						</a>
 					</div>
 					<div class="removebg_option option">
-						<a href="#">
-							<img src="../static/assets/icons/word_file.webp" height="45" alt="PDF to Word feature in the quick menu">
-							<p>PDF to Word</p>
+						<a href="{{url_for('enhancerIndex')}}">
+							<img src="../static/assets/icons/background_remover.webp" alt="Image Enhancement Tool feature in the quick menu">
+							<p>Image Enhancer</p>
+
+							<!-- <img src="../static/assets/icons/word_file.webp" height="45" alt="PDF to Word feature in the quick menu"> -->
+							<!-- <p>PDF to Word</p> -->
 						</a>
 					</div>
 					<div class="removebg_option option">
-						<a href="#">
-							<img src="../static/assets/icons/summary.webp" alt="Summarizer feature in the quick menu">
-							<p>Summarizer</p>
+						<a href="{{url_for('speechToTextGenerator')}}">
+							<img src="../static/assets/icons/summary.webp" alt="Audio Lyrics Generator Feature in the quick menu">
+							<p>Audio Lyrics Generator</p>
 						</a>
 					</div>
 				</div>
@@ -176,14 +187,14 @@
 				<input type="file" name="">
 			</div>-->
 
-			<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JosaphatBitingo" data-description="Support me on Buy me a coffee!" data-message="Buy Josaphat a coffee ☕ 	Your support, no matter how small, is greatly appreciated! Thank you sooo much!" data-color="#5F7FFF" data-position="Right" data-x_margin="15" data-y_margin="40"></script>
+			<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JosaphatBitingo" data-description="Support us on Buy me a coffee!" data-message="Buy Josaphat and Ezsther a coffee ☕ 	Your support, no matter how small, is greatly appreciated! Thank you sooo much!" data-color="#5F7FFF" data-position="Right" data-x_margin="15" data-y_margin="40"></script>
 
 		</section>
 
 
 		<footer>
-			<!--<p>Made with  &#128156;  by Josaphat & Esther</p>-->
-			<p> &#9426; 2023 || All rights reserved</p>
+			<!-- <p>Made with  &#128156;  by Josaphat & Esther</p> -->
+			<p> &#9426; 2023 Between Jobs AI || All rights reserved</p>
 		</footer>
 	</div>
 	</body>

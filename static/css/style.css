@@ -23,7 +23,7 @@
 h1::-moz-selection,
 h1::selection {
   background: #E0DCCC;
-  color: #333; 
+  color: #333;
 }
 
 body {
@@ -128,7 +128,7 @@ ul li {
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   cursor: pointer;
-} 
+}
 
 .main_page .quick_menu .wrapper .option a {
   text-decoration: none;
@@ -200,7 +200,7 @@ ul li {
 .main_page nav ul li a:hover {
   color: var(--light-purple);
   transform: scale(1.1);
-} 
+}
 
 .main_page nav ul li a img {
   opacity: .7;
@@ -227,7 +227,7 @@ ul li {
   width: 30em;
   height: 25em;
   border-radius: 8px;
-  -webkit-box-shadow: -6px 7px 10px -7px #000000; 
+  -webkit-box-shadow: -6px 7px 10px -7px #000000;
   box-shadow: -6px 7px 10px -7px #000000;
   animation: exit .7s ease 0s 1 reverse backwards;
 }
@@ -393,17 +393,17 @@ footer p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--light-purple); 
+  background: var(--light-purple);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--medium-purple); 
+  background: var(--medium-purple);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:var(--solid-purple); 
+  background:var(--solid-purple);
 }
 
 /*the scrollbar ends here*/
@@ -419,7 +419,7 @@ footer p {
 
 @media screen and (min-width: 481px) and (max-width:768px) {
 
-  
+
 }
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
@@ -429,18 +429,18 @@ footer p {
 
 @media screen and (min-width: 1025px) and (max-width:1200px){ /*done*/
 
- 
+
  .main_page .main_text h1 {
     font-size: clamp(1.2rem, 2.3vw, 1.8rem);
   }
 
- 
+
  .main_page .main_text h3 {
     font-size: clamp(.8rem, 2vw, 1.4rem);
     max-width: 60vw;
   }
 
- 
+
 }
 
 @media screen and (min-width: 1201px) {
@@ -449,7 +449,7 @@ footer p {
     font-size: clamp(2.2rem, 2vw, 3.3rem);
   }
 
- 
+
  .main_page .main_text h3 {
     font-size: clamp(1.2rem, 2.1vw, 2rem);
     max-width: 60vw;
@@ -463,9 +463,9 @@ footer p {
 /*animations starts here*/
 
 @keyframes entrance { /*features menu entrance animation*/
-  
+
   0% {
-    visibility: hidden; 
+    visibility: hidden;
     opacity: 0;
     transform: rotateX(-100deg);
     transform-origin: top;
@@ -481,7 +481,7 @@ footer p {
 @keyframes exit { /*features menu exit animation*/
 
   0% {
-    visibility: hidden; 
+    visibility: hidden;
     opacity: 0;
     transform: rotateX(-100deg);
     transform-origin: top;
