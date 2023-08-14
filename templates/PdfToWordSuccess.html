@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Between Jobs AI || PDF to Docx-Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/logo.webp') }}">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Conversion Successful</h1>
+        <p>Click the link below to download the converted DOCX file:</p>
+        <a href="{{ docx_file_url }}" download class="btn btn-primary">{{ docx_file_name }}</a>
+    </div>
+</body>
+</html>
